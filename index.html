@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Fruit Shop</title>
 
     <script>
@@ -13,7 +14,7 @@
           theme: {
             extend: {
               colors: {
-                main-color: '#F85559',
+                "main-color": '#F85559',
               }
             }
           }
@@ -23,6 +24,45 @@
 </head>
 <body>
     <header>
+        <nav>
+          <div class="flex justify-between items-center max-w-7xl mx-auto bg-main-color p-3 rounded-full m-4">
+            <span>
+              <ul class="lg:flex hidden">
+                <li class="p-1">Home</li>
+                <li class="p-1">About</li>
+                <li class="p-1">Shop</li>
+                <li class="p-1">All Fruits</li>
+              </ul>
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li class="p-1">Home</li>
+                  <li class="p-1">About</li>
+                  <li class="p-1">Shop</li>
+                  <li class="p-1">All Fruits</li>
+                  <li>
+                    <div class="form-control relative sm:block md:hidden lg:hidden">
+                      <input type="text" placeholder="Search" class="input input-bordered rounded-full min-w-full" />
+                      <img src="./svg/Frame.svg" alt="search icon" class="absolute top-[20px] right-[20px] w-4">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </span>
+
+            <div class="flex items-center">
+              <img src="./images/logo.png" alt="logo">
+              <span>Fruit Burst</span>
+
+            </div>
+            <div class="form-control relative hidden md:block lg:block">
+              <input type="text" placeholder="Search" class="input input-bordered rounded-full w-24 md:w-auto" />
+              <img src="./svg/Frame.svg" alt="search icon" class="absolute top-[13px] right-[13px] w-4">
+            </div>
+          </div>
+         </nav>
 
     </header>
     <main>
