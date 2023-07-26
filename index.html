@@ -24,45 +24,39 @@
 </head>
 <body>
     <header>
-        <nav>
-          <div class="flex justify-between items-center max-w-7xl mx-auto bg-main-color p-3 rounded-full m-4">
-            <span>
-              <ul class="lg:flex hidden">
-                <li class="p-1">Home</li>
-                <li class="p-1">About</li>
-                <li class="p-1">Shop</li>
-                <li class="p-1">All Fruits</li>
-              </ul>
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <i class="fa-solid fa-bars"></i>
-                </label>
-                <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li class="p-1">Home</li>
-                  <li class="p-1">About</li>
-                  <li class="p-1">Shop</li>
-                  <li class="p-1">All Fruits</li>
-                  <li>
-                    <div class="form-control relative sm:block md:hidden lg:hidden">
-                      <input type="text" placeholder="Search" class="input input-bordered rounded-full min-w-full" />
-                      <img src="./svg/Frame.svg" alt="search icon" class="absolute top-[20px] right-[20px] w-4">
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </span>
-
-            <div class="flex items-center">
-              <img src="./images/logo.png" alt="logo">
-              <span>Fruit Burst</span>
-
+      <nav class="container max-w-screen-xl mx-auto">
+        <div class="navbar bg-base-100 justify-between bg-main-color">
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Item 1</a></li>
+               <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>          
+          </div>
+          <div class="navbar-end">
+            <div class="custom-input relative hidden sm:block">
+              <input type="text" placeholder="Search here" class="input input-bordered max-w-full md:w-60 focus:outline-none rounded-full" />
+              <img src="./svg/Frame.svg" alt="search icon" class="absolute top-[15px] right-[15px] w-5">
             </div>
-            <div class="form-control relative hidden md:block lg:block">
-              <input type="text" placeholder="Search" class="input input-bordered rounded-full w-24 md:w-auto" />
-              <img src="./svg/Frame.svg" alt="search icon" class="absolute top-[13px] right-[13px] w-4">
+            
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
+                <li><a>Item 1</a></li>
+                <li><a>Item 3</a></li>
+                <li class="relative">
+                  <input type="text" placeholder="Search here" class="input input-bordered max-w-full md:w-60 focus:outline-none rounded-full" />
+                  <img src="./svg/Frame.svg" alt="search icon" class="absolute top-[13px] right-[13px] w-10">
+                </li>
+              </ul>
             </div>
           </div>
-         </nav>
+        </div>
+      </nav>
 
     </header>
     <main>
