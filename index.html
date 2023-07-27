@@ -36,15 +36,20 @@
       <!-- navbar starts here  -->
 
       <nav class="container max-w-screen-xl mx-auto m-3 ">
-        <div class="navbar justify-between bg-main-color rounded-full">
+        <div class="navbar justify-between bg-transparent sm:bg-main-color rounded-full px-7">
           <div class="navbar-start hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-               <li><a>Item 3</a></li>
+            <ul class="menu menu-horizontal px-1 text-white text-base hover:bg-transparent">
+              <li class="p-3 hover:cursor-pointer">Home</li>
+              <li class="p-3 hover:cursor-pointer">About</li>
+              <li class="p-3 hover:cursor-pointer">Shop</li>
+              <li class="p-3 hover:cursor-pointer">All Fruits</li>
             </ul>
           </div>
           <div class="navbar-center">
-            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>          
+            <div class="flex justify-center items-center">
+              <img src="./images/logo.png" alt="">
+              <span class="text-2xl text-black sm:text-white font-black ml-2">Fruit Burst</span>
+            </div>       
           </div>
           <div class="navbar-end">
             <div class="custom-input relative hidden sm:block">
@@ -54,11 +59,15 @@
             
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                  <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
               </label>
               <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
+                <li class="p-3 hover:cursor-pointer">Home</li>
+                <li class="p-3 hover:cursor-pointer">About</li>
+                <li class="p-3 hover:cursor-pointer">Shop</li>
+                <li class="p-3 hover:cursor-pointer">All Fruits</li>
                 <li class="relative">
                   <input type="text" placeholder="Search here" class="input input-bordered max-w-full md:w-60 focus:outline-none rounded-full" />
                   <img src="./svg/Frame.svg" alt="search icon" class="absolute top-[13px] right-[13px] w-10">
@@ -469,62 +478,37 @@
       </section>
       <!-- Meet the section ends here  -->
 
-      <!-- Why Choose Us section starts  -->
-      <section class="max-w-screen-xl mx-auto px-5 sm:px-0">
-        <div class="container">
-          <div class="flex-col justify-center flex">
-            <h1 class="mb-5 text-5xl font-bold mx-auto">Why Choose Us</h1>
-            <p class="text-center text-xs leading-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
-          </div>
-          
-          <div class="container flex justify-between items-center gap-10">
-            <div class="flex-col justify-between items-center">
-              <div class="flex justify-between items-center">
-                <img src="./svg/group 1.svg" alt="" class="bg-slate-500 p-4 m-3 rounded-full">
-                <div>
-                  <h3>Dedicated Team</h3>
-                  <hr class="w-5/6 h-0.5 bg-slate-100 my-3">
-                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                </div>              
-              </div>
-              
-              <div class="flex justify-between items-center">
-                <img src="./svg/group 1.svg" alt="" class="bg-slate-500 p-4 m-3 rounded-full">
-                <div>
-                  <h3>Dedicated Team</h3>
-                  <hr class="w-5/6 h-0.5 bg-slate-100 my-3">
-                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                </div>              
-              </div>
-              
-              <div class="flex justify-between items-center">
-                <img src="./svg/group 1.svg" alt="" class="bg-slate-500 p-4 m-3 rounded-full">
-                <div>
-                  <h3>Dedicated Team</h3>
-                  <hr class="w-5/6 h-0.5 bg-slate-100 my-3">
-                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                </div>              
-              </div>         
-              
 
-            </div>
-            <div>
-              <img src="./images/whychoose1.png" alt="">
-            </div>
-            <div>
+<!-- Why Choose Us section ends  -->
 
-            </div>
-            <img src="./images/whychoose1.png" alt="">
-          </div>
-        </div>
-
-      </section>
-      <!-- Why Choose Us section ends  -->
       
     </main>
-    <footer>
 
-    </footer>
-    
+
+<!-- Footer sectoin starts here  -->
+      <footer class="footer footer-center p-16 bg-[#121212] text-primary-content">
+        <div>
+          <div class="flex justify-center items-center">
+            <img src="./images/logo.png" alt="">
+            <span class="text-3xl text-white font-black ml-2">Fruit Burst</span>
+          </div>
+          <div class="flex justify-center flex-wrap gap-10 text-white my-3">
+            <a class="hover:cursor-pointer">Home</a> 
+            <a class="hover:cursor-pointer">About</a> 
+            <a class="hover:cursor-pointer">Shop</a> 
+            <a class="hover:cursor-pointer">All Fruits</a> 
+            <a class="hover:cursor-pointer">Support</a>
+            <a class="hover:cursor-pointer">My Account</a>
+          </div> 
+        </div> 
+        <div>
+          <div class="flex justify-center flex-wrap gap-6 text-white">
+            <img src="./svg/twitter 1.svg" alt="" class=" w-[25px]">
+            <img src="./svg/facebook 1 (1).svg" alt="" class=" w-[25px]">
+            <img src="./svg/instagram 1.svg" alt="" class=" w-[25px]">
+            <img src="./svg/apple 1.svg" alt="" class=" w-[25px]">
+          </div>
+        </div>
+      </footer>   
 </body>
 </html>
